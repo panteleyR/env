@@ -8,11 +8,6 @@ class Env implements EnvInterface
 {
     protected array $data = [];
 
-//    public function __construct()
-//    {
-//
-//    }
-
     public function load(string $path): void
     {
         $envFile = file_get_contents($path);
